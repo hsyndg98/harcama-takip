@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ust_ekran_tikla"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="3dp"
+    android:layout_marginEnd="10dp"
+    app:cardCornerRadius="30dp"
+    app:ignore="NamespaceTypo"
+    card_view:cardCornerRadius="20dp"
+    card_view:cardElevation="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/arkaplan_renk"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:paddingLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:textSize="20sp"
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity=""
+                android:clickable="true"
+                android:focusable="true"
+                android:text="@string/merhaba"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tvIsim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:text="Hüseyin" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingEnd="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:id="@+id/tVdenem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/harcamaniz"
+                android:textAlignment="textEnd" />
+
+            <TextView
+                android:id="@+id/tvToplamHarcama"
+                android:textAlignment="textEnd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:text="0.0"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

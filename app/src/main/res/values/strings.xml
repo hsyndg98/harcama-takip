@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Harcama Takip</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="btnTl" translatable="false">Tl</string>
+    <string name="btnEuro" translatable="false">Euro</string>
+    <string name="btnDolar" translatable="false">Dolar</string>
+    <string name="btnSterin" translatable="false">Sterlin</string>
+    <string name="merhaba">Merhaba</string>
+    <string name="harcamaniz">Harcamanız</string>
+    <string name="ekle" translatable="false">Ekle</string>
+    <string name="harcama_ekle">Harcama Ekle</string>
 </resources>

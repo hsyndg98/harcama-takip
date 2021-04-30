@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ekle.EkleFragment">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/harcama_ekle"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="18dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusBottomStart="20dp"
+        app:boxCornerRadiusTopEnd="20dp"
+        app:boxCornerRadiusTopStart="20dp"
+        android:id="@+id/urunAciklama_et"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/urunAciklama_et2"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Aciklama"
+            android:textColor="#FF5722"
+            android:textCursorDrawable="@null" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusBottomStart="20dp"
+        app:boxCornerRadiusTopEnd="20dp"
+        app:boxCornerRadiusTopStart="20dp"
+        android:id="@+id/urunTutar_et"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Harcama"
+        app:layout_constraintEnd_toEndOf="@+id/urunAciklama_et"
+        app:layout_constraintStart_toStartOf="@+id/urunAciklama_et"
+        app:layout_constraintTop_toBottomOf="@+id/urunAciklama_et">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/urunTutar_et2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            app:shapeAppearance="?attr/shapeAppearanceOverlay" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <RadioGroup
+        android:id="@+id/urunTip"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@+id/urunTutar_et"
+        app:layout_constraintTop_toBottomOf="@+id/urunTutar_et">
+
+        <RadioButton
+            android:id="@+id/rbFatura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fatura" />
+
+        <RadioButton
+            android:id="@+id/rbKira"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kira" />
+
+        <RadioButton
+            android:id="@+id/rbDiger"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Diğer" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/paraBirimi_rb"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/urunTutar_et"
+        app:layout_constraintStart_toStartOf="@+id/urunTip"
+        app:layout_constraintTop_toBottomOf="@+id/urunTip">
+
+        <RadioButton
+            android:id="@+id/rbTL"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btnTl" />
+
+        <RadioButton
+            android:id="@+id/rbEuro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btnEuro" />
+
+        <RadioButton
+            android:id="@+id/rbDolar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btnDolar" />
+
+        <RadioButton
+            android:id="@+id/rbSterlin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btnSterin" />
+    </RadioGroup>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/ekle_btn"
+        style="style=?attr/materialButtonInlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/ekle"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/paraBirimi_rb"
+        app:layout_constraintTop_toBottomOf="@+id/paraBirimi_rb" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

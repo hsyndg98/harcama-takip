@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Harcama Takip</string>
+    <string name="merhaba">Hello</string>
+    <string name="harcamaniz">Your Spend</string>
+    <string name="ekle">Add</string>
+    <string name="harcama_ekle">Add Spend</string>
+</resources>
