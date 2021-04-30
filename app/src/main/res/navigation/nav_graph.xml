@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_listFragment_to_ekleFragment"
             app:destination="@id/ekleFragment" />
+        <action
+            android:id="@+id/action_listFragment_to_detayFragment"
+            app:destination="@id/detayFragment" />
     </fragment>
     <fragment
         android:id="@+id/ekleFragment"
@@ -22,5 +25,17 @@
         <action
             android:id="@+id/action_ekleFragment_to_listFragment"
             app:destination="@id/listFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detayFragment"
+        android:name="com.example.harcamatakip.fragments.detay.DetayFragment"
+        android:label="fragment_detay"
+        tools:layout="@layout/fragment_detay" >
+        <action
+            android:id="@+id/action_detayFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+        <argument
+            android:name="harcama"
+            app:argType="com.example.harcamatakip.data.model.Harcama" />
     </fragment>
 </navigation>
