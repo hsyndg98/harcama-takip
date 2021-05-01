@@ -42,8 +42,8 @@ class DetayFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.urunAciklamaDetayTxt.text = args.harcama.urunAciklama
-        binding.urunFiyatDetayTxt.text = args.harcama.urunTutar.toString()
+        binding.urunAciklamaDetayTxt.text = args.aciklamaDetay
+        binding.urunFiyatDetayTxt.text = args.tutarDetay
 
         binding.silBtn.setOnClickListener {
             urunSil()
@@ -55,7 +55,7 @@ class DetayFragment : Fragment() {
         alertDialog.setMessage("Harcama listenizden silinecek!")
 
         alertDialog.setPositiveButton("Tamam", DialogInterface.OnClickListener { dialog, which ->
-            mUrunViewModel.harcamaSil(args.harcama)
+            //mUrunViewModel.harcamaSil()
             Toast.makeText(requireContext(),"Başarıyla silindi", Toast.LENGTH_LONG).show()
             findNavController().navigate(R.id.action_detayFragment_to_listFragment)
         })

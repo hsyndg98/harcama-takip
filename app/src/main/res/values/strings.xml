@@ -8,7 +8,8 @@
     <string name="btnSterin" translatable="false">Sterlin</string>
     <string name="merhaba">Merhaba</string>
     <string name="harcamaniz">Harcamanız</string>
-    <string name="ekle" translatable="false">Ekle</string>
+    <string name="ekle">Ekle</string>
     <string name="harcama_ekle">Harcama Ekle</string>
     <string name="sil">Sil</string>
+
 </resources>

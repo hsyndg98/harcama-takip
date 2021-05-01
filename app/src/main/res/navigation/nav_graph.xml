@@ -35,7 +35,14 @@
             android:id="@+id/action_detayFragment_to_listFragment"
             app:destination="@id/listFragment" />
         <argument
-            android:name="harcama"
-            app:argType="com.example.harcamatakip.data.model.Harcama" />
+            android:name="imageDetay"
+            app:argType="integer" />
+        <argument
+            android:name="tutarDetay"
+            app:argType="string" />
+        <argument
+            android:name="aciklamaDetay"
+            app:argType="string" />
+
     </fragment>
 </navigation>

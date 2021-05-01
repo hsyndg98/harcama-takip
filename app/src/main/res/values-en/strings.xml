@@ -5,4 +5,5 @@
     <string name="harcamaniz">Your Spend</string>
     <string name="ekle">Add</string>
     <string name="harcama_ekle">Add Spend</string>
+    <string name="sil">Delete</string>
 </resources>
